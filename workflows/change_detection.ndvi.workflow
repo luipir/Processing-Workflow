@@ -1,5 +1,5 @@
 .NAME:Land cover change (image differencing)
-.GROUP:PG #04: Medium resolution full basin characterization
+.GROUP:Example workflows
 .ALGORITHM:otb:multivariatealterationdetector
 .PARAMETERS:{"-ram": 128}
 .MODE:Normal

@@ -1,32 +1,5 @@
 .NAME:Land cover mapping (unsupervised)
-.GROUP:PG #04: Medium resolution full basin characterization
-.ALGORITHM:beam:reproject
-.PARAMETERS:{"orthorectify": false, "includeTiePointGrids": false, "easting": 99999.9, "elevationModelName": "", "orientation": 0, "pixelSizeY": 99999.9, "pixelSizeX": 99999.9, "noDataValue": 99999.9, "width": 99999, "resampling": 1, "referencePixelX": 99999.9, "referencePixelY": 99999.9, "addDeltaBands": false, "height": 99999, "tileSizeX": 99999, "northing": 99999.9}
-.MODE:Normal
-.INSTRUCTIONS:This step  transforms the input image from one projection to another, and convert the file to GeoTIFF.
-
-SETTINGS
-
-Select the image product to be reprojected.
-
-Select the Coordinate Reference System (CRS) for the output file. The TIGER-NET default projection is Geographic Coordinate System, WGS84 (i.e. EPSG 4326).
-
-Choose prefered method for resampling (default is "Bilinear")
-
-Select "No" to add delta longitude and latitude bands, the tie-point grids can also be omitted to save disk space.
-
-Specify the output image: 01_Reproject_[NAME].tif
-
-FURTHER INFORMATION
-
-The step is optional but can be used if the required classification output projection is different from the input image projection.
-
-
-
-
-
-
-!INSTRUCTIONS
+.GROUP:Example workflows
 .ALGORITHM:otb:unsupervisedkmeansimageclassification
 .PARAMETERS:{"-maxit": 1000, "-ts": 100000, "-ram": 128, "-nc": 50, "-ct": 1e-05}
 .MODE:Normal
