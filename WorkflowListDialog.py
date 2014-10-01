@@ -65,7 +65,7 @@ class WorkflowListDialog(QtGui.QDialog):
         
     def setupUi(self):
         self.resize(400, 500)
-        self.setWindowTitle("Water Observation and Information System")
+        self.setWindowTitle("Workflow library")
         self.setWindowIcon(WorkflowUtils.workflowIcon())
         self.tabWidget = QtGui.QTabWidget()
         self.tabWidget.setMinimumWidth(300)

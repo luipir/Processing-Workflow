@@ -51,7 +51,7 @@ class WorkflowProvider(AlgorithmProvider):
         
         # Create action that will display workflow list dialog when toolbar button is clicked
         self.action = QAction(QIcon(self.getIcon()), \
-                                  "WOIS Workflows", self.iface.mainWindow())
+                                  "Workflows", self.iface.mainWindow())
         QObject.connect(self.action, SIGNAL("triggered()"), self.displayWorkflowListDialog)
 
 
@@ -86,7 +86,7 @@ class WorkflowProvider(AlgorithmProvider):
 
                     
     def getDescription(self):
-        return "WOIS Workflows (Step by step guidance)"
+        return "Workflows (Step by step guidance)"
 
     def getName(self):
         return "workflow"
